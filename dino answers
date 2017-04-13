@@ -1,0 +1,17 @@
+1. SELECT COUNT(dinos) FROM dinos;
+
+2. SELECT name, period FROM dinos WHERE period LIKE 'Jurassic';
+
+3. SELECT SUM(length) FROM dinos WHERE period = 'Cretaceous';
+
+4. SELECT name, period FROM dinos WHERE period = 'Cretaceous' OR period = 'Jurassic' ORDER BY name ASC;
+
+5. SELECT name, t_order, diet FROM dinos WHERE t_order LIKE '%Saurischia%' AND diet = 'Herbivorous';
+
+6. SELECT name, id, length FROM dinos ORDER BY length ASC LIMIT 1; --displays ID of soon-to-be victim
+   UPDATE dinos SET name = 'shortie' WHERE id = 160; --Slaps victim with humiliating nickname
+
+7. SELECT name, id FROM dinos ORDER BY name ASC LIMIT 1;
+
+8. SELECT name, length, id FROM dinos ORDER BY length DESC LIMIT 5;
+   UPDATE dinos SET name = 'THE FAMOUS FIVE' WHERE id = 18 OR id = 7 OR id = 23 OR id = 60 OR id = 35;
